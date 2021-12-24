@@ -76,14 +76,19 @@ var rescirculo = document.getElementById('rescirculo')
 
  var pi = 3.14
  var Acirculo = pi*Math.pow(Number(r.value), 2)
- rescirculo.innerHTML=("A area do circulo é", Acirculo)
+ rescirculo.innerHTML=`A area do circulo é ${Acirculo}`
 }
 
+function pitagorar(){
+    
 
 //pitagoras
-var c1 = 34
-var c2 = 67
+var c1 = Number(document.getElementById('c1').value)
+var c2 = Number(document.getElementById('c2').value)
+var respitagoras = document.getElementById('respitagoras')
 
  var s1  = Math.pow(c1, 2)+Math.pow(c2, 2)
  var H = Math.sqrt(s1)
- console.log("O valor de hipotenusa é",H)
+ //console.log("O valor de hipotenusa é",H)
+ respitagoras.innerHTML=`O Valor de hipotenusa é ${H}`
+}
