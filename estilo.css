@@ -5,6 +5,7 @@ text-align: center;
 }
 
 .formulas{
+    
     background-color: rgb(255, 255, 255);
     font:normal 12pt arial;
     border-radius: 50px;
@@ -16,6 +17,7 @@ text-align: center;
      
 } 
 
+
 footer{
 font-style: italic;
 }
@@ -24,7 +26,7 @@ font-style: italic;
     font:normal 15pt arial;
 }
 
-p#titulo{
+p#titulo{ 
     font:bold 30pt arial;
 }
 p#bhaskara{
@@ -41,6 +43,8 @@ p#areadecirculo{
     font:normal 15pt arial;
 }P#observa{
     font:normal 15pt arial;
+}P#Jurossimp{
+    font:normal 20pt arial;
 }
 .radio{
     font:normal 7pt arial;
