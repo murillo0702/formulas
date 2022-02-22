@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,64 +8,137 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Calcula formula</title>
 </head>
-<body  onload="carregar()">
-     <header>
-         <p id= 'titulo'>hora,<br> nome</p>
-     </header>
-     <section class = 'formulas'>
-         <p id ='bhaskara'>Bhaskara</p>
-         <label for="txtA">Valor A</label>
-         <input type="number" name="A" id="txtA">
-         <br>
-         <label for="txtB">Valor B</label>
-         <input type="number" name="B" id="txtB"> 
-         <br>
-         <label for="txtC">Valor C</label>
-         <input type="number" name="C" id="txtC">
-         <br>
-         <input type="button" value="Calcular" onclick= "Bhaskarar()">
-             <br>
-             <label for="res"> <p class = 'pformulas'>Δ=</p>  </label>
-             <div id = 'res'></div>
 
-             <label for="resrdelta"> <p class = 'pformulas'>√Δ= </p> </label>
-             <div id = 'resrdelta'></div>
+<body onload="carregar()">
+    <header>
+        <p id='titulo'>hora,<br> nome</p>
+    </header>
 
-             <label for="rescomenos"><p class = 'pformulas'>Bhaskara - =</p></label>
-             <div id = 'rescommenos'></div>
+    <!--Bhaskara-->
 
-             <label for="rescomamis"><p class = 'pformulas'>Bhaskara + =</p></label>
-             <div id = 'rescommais'></div>
- 
+    <section class='formulas'>
+        <p id='bhaskara'>Bhaskara</p>
+        <label for="txtA">Valor A</label>
+        <input type="number" name="A" id="txtA">
+        <br>
+        <label for="txtB">Valor B</label>
+        <input type="number" name="B" id="txtB">
+        <br>
+        <label for="txtC">Valor C</label>
+        <input type="number" name="C" id="txtC">
+        <br>
+        <input type="button" value="Calcular" onclick="Bhaskarar()">
+        <br>
+        <label for="res">
+            <p class='pformulas'>Δ=</p>
+        </label>
+        <div id='res'></div>
+
+        <label for="resrdelta">
+            <p class='pformulas'>√Δ= </p>
+        </label>
+        <div id='resrdelta'></div>
+
+        <label for="rescomenos">
+            <p class='pformulas'>Bhaskara - =</p>
+        </label>
+        <div id='rescommenos'></div>
+
+        <label for="rescomamis">
+            <p class='pformulas'>Bhaskara + =</p>
+        </label>
+        <div id='rescommais'></div>
 
 
 
-     </section>
-     <br>
-     <section class = 'formulas'>
-         <p id= 'areadecirculo'>Area de circulo</p>
-         <label for="r">valor do raio</label>
-         <input type="number" name="r" id="r">
-         <input type="button" value="Calcular" onclick="areadecirculo()">
-             <div id = rescirculo>
 
-             </div>
-     </section>
-     <br>
-     <section class = 'formulas'>
-         <p id = 'pitagoras'>Teorema de pitagoras</p>
-         <label for="c1">Cateto 1</label>
-         <input type="number" name="" id="c1">
-         <label for="c2">Cateto 2</label>
-         <input type="number" name="" id="c2">
-         <input type="button" value="Calcular" onclick= "pitagorar()">
-             <div id = 'respitagoras'>
+    </section>
+    <br>
 
-             </div>
-     </section>
+    <!--area de circulo-->
+
+    <section class='formulas'>
+        <p id='areadecirculo'>Area de circulo</p>
+        <label for="r">valor do raio</label>
+        <input type="number" name="r" id="r">
+        <input type="button" value="Calcular" onclick="areadecirculo()">
+        <div id=rescirculo>
+
+        </div>
+    </section>
+    <br>
+
+    <!--Pitagoras-->
+
+    <section class='formulas'>
+        <p id='pitagoras'>Teorema de pitagoras</p>
+        <label for="c1">Cateto 1</label>
+        <input type="number" name="" id="c1">
+        <label for="c2">Cateto 2</label>
+        <input type="number" name="" id="c2">
+        <input type="button" value="Calcular" onclick="pitagorar()">
+        <div id='respitagoras'>
+
+        </div>
+    </section>
+    <br>
+
+    <!--Doppler-->
+
+    <section class='formulas'>
+        <p id='pitagoras'>Efeito Doppler</p>
+        <label for="Fo" id="label">Frequencia do observador</label>
+        <br>
+        <input type="number" name="" id="Fo">
+
+        <label for="Vo" id="label">velocidade do observador</label>
+        <br>
+        <input type="number" name="" id="Vo">
+
+        <label for="Ff" id="label">Frequencia do fonte</label>
+        <br>
+        <input type="number" name="" id="Ff">
+
+        <label for="Vf" id="label">velocidade da fonte</label>
+        <br>
+        <input type="number" name="" id="Vf">
+        <br>
+
+        <div id="Fonte">
+            <p id="fonte">A fonte esta:</p>
+            <br>
+            <section id="fonte">
+                <input type="radio" name="Fonte" id="Aproximando" checked>
+                <label for="Aproximando" class="radio">Aproximando</label>
+                <input type="radio" name="Fonte" id="Diminuindo">
+                <label for="Diminuindo" class="radio">Afastando</label>
+                <br>
+            </section>
+        </div>
+
+        <div id="observa">
+            <p id="observa">O Observador esta:</p>
+            <br>
+            <section id="observa">
+                <input type="radio" name="observa" id="Aproximando" checked>
+                <label for="Aproximando" class="radio">Aproximando</label>
+                <input type="radio" name="observa" id="Diminuindo">
+                <label for="Diminuindo" class="radio">Afastando</label>
+                <br>
+            </section>
+        </div>
+
+        <input type="button" value="Calcular" onclick="doppler()">
+        <br>
+        <br>
+        <div id='resdoppler'>
+            defina o valor incognito como 1 "x=1"
+        </div>
+    </section>
 </body>
 <footer>
 
 </footer>
 <script src="script.js"> </script>
+
 </html>
