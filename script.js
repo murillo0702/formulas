@@ -151,3 +151,26 @@ function doppler() {
         }
     }
 }
+//Juros s
+function Jurossimples() {
+
+    const juros = Number(document.getElementById('Juros').value)
+    const capital = Number(document.getElementById('Capital').value)
+    const taxa = Number(document.getElementById('taxa').value) / 12 / 100
+    const tempo = Number(document.getElementById('tempo').value)
+    const res = document.getElementById('resjurossimp')
+
+    const conta1 = capital * taxa * tempo
+    //console.log(conta1)
+    if (juros === 1) {
+        const conta2 = conta1 / juros
+        res.innerHTML = `O valor da incógnita é ${conta2}`
+    } else {
+        const conta2 = juros / conta1
+        res.innerHTML = `O valor da incógnita é ${conta2}`
+    }
+    //console.log(conta2)
+
+
+
+}
