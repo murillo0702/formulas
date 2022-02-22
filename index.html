@@ -89,19 +89,19 @@
         <p id='pitagoras'>Efeito Doppler</p>
         <label for="Fo" id="label">Frequencia do observador</label>
         <br>
-        <input type="number" name="" id="Fo">
+        <input type="number" name="" id="Fo" placeholder="Hz">
 
         <label for="Vo" id="label">velocidade do observador</label>
         <br>
-        <input type="number" name="" id="Vo">
+        <input type="number" name="" id="Vo" placeholder="M/s">
 
         <label for="Ff" id="label">Frequencia do fonte</label>
         <br>
-        <input type="number" name="" id="Ff">
+        <input type="number" name="" id="Ff" placeholder="Hz">
 
         <label for="Vf" id="label">velocidade da fonte</label>
         <br>
-        <input type="number" name="" id="Vf">
+        <input type="number" name="" id="Vf" placeholder="M/s">
         <br>
 
         <div id="Fonte">
@@ -135,6 +135,33 @@
             defina o valor incognito como 1 "x=1"
         </div>
     </section>
+    <br>
+
+    <section class="formulas">
+        <p id="Jurossimp">Juros Simples</p>
+
+        <label for="Juros">Juros</label>
+        <input type="number" name="" id="Juros" placeholder="R$">
+        <br>
+        <label for="Capital">Capital</label>
+        <br>
+        <input type="number" name="" id="Capital" placeholder="R$">
+        <br>
+        <label for="taxa">Taxa</label>
+        <br>
+        <input type="number" name="" id="taxa" placeholder="% ao ano">
+        <br>
+        <label for="tempo">Tempo</label>
+        <br>
+        <input type="number" name="" id="tempo" placeholder="Meses">
+        <input type="button" value="calcular" onclick="Jurossimples()">
+        <br>
+        <br>
+        <div id="resjurossimp">
+            defina o valor incognito como 1 "x=1"
+        </div>
+    </section>
+
 </body>
 <footer>
 
