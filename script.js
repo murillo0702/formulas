@@ -92,3 +92,56 @@ var respitagoras = document.getElementById('respitagoras')
  //console.log("O valor de hipotenusa é",H)
  respitagoras.innerHTML=`O Valor de hipotenusa é ${H}`
 }
+
+//doppler
+function doppler() {
+
+    var V = 340
+
+    var Fo = Number(document.getElementById('Fo').value)
+    var Vo = Number(document.getElementById('Vo').value)
+    var Ff = Number(document.getElementById('Ff').value)
+    var Vf = Number(document.getElementById('Vf').value)
+    var resdoppler = document.getElementById('resdoppler')
+
+
+    var fonte = document.getElementsByName('Fonte')
+    var observador = document.getElementsByName('observa')
+
+    if (fonte[0].checked) {
+        const conta1 = Fo * (V - Vf)
+        //console.log(conta1)
+        if (observador[0].checked) {
+            const conta2 = Ff * (V - Vo)
+            // console.log(conta2)
+            const final = conta2 / conta1
+            resdoppler.innerHTML = `O valor incógnito é ${final}`
+            // console.log(final)
+        } else {
+            const conta2 = Ff * (V + Vo)
+            //console.log(conta2)
+            const final = conta2 / conta1
+            resdoppler.innerHTML = `O valor incógnito é ${final}`
+            // console.log(final)
+        }
+    }
+
+    if (fonte[1].checked) {
+        const conta1 = Fo * (V + Vf)
+        //console.log(conta1)
+
+        if (observador[0].checked) {
+            const conta2 = Ff * (V - Vo)
+            //console.log(conta2)
+            const final = conta2 / conta1
+            resdoppler.innerHTML = `O valor incógnito é ${final}`
+            //console.log(final)
+        } else {
+            const conta2 = Ff * (V + Vo)
+            //console.log(conta2)
+            const final = conta2 / conta1
+            resdoppler.innerHTML = `O valor incógnito é ${final}`
+            //console.log(final)
+        }
+    }
+}
