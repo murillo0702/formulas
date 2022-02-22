@@ -9,7 +9,10 @@ function carregar(){
     var minutos =agora.getMinutes()
     //msg.innerText =(`agora são ${hora}:${minutos}`)
 
-if (hora >=0 && hora < 12)  {
+if(nome===null){
+       titulo.innerHTML=`bota teu nome porra, ta achando q eu sou vidente caraio?! atualiza esta poha de site ai`
+    }
+    else if (hora >=0 && hora < 12)  {
 //bom dia !!
 titulo.innerHTML=`Bom dia, ${nome}`
 
