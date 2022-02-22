@@ -13,8 +13,8 @@ text-align: center;
     text-align: center;
     margin: auto;
     box-shadow: 2px 1px 30px rgba(0, 0, 0, 0.301);
-    
-}
+     
+} 
 
 footer{
 font-style: italic;
@@ -34,4 +34,14 @@ p#areadecirculo{
     font:normal 20pt arial;
 }P#pitagoras{
     font:normal 20pt arial;
+}
+.label{
+    font:normal 30pt arial;
+}P#fonte{
+    font:normal 15pt arial;
+}P#observa{
+    font:normal 15pt arial;
+}
+.radio{
+    font:normal 10pt arial;
 }
