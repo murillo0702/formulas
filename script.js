@@ -11,6 +11,9 @@ function carregar(){
 
 if(nome===null){
        titulo.innerHTML=`bota teu nome porra, ta achando q eu sou vidente caraio?! atualiza esta poha de site ai`
+    }else if(nome.length==0){
+        titulo.innerHTML=`bota teu nome porra, ta achando q eu sou vidente caraio?! atualiza esta poha de site ai`
+
     }
     else if (hora >=0 && hora < 12)  {
 //bom dia !!
