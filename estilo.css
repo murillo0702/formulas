@@ -1,3 +1,4 @@
+
 body{
 background-color: rgb(255, 255, 255) ;
 font:normal 8pt arial;
@@ -48,4 +49,35 @@ p#areadecirculo{
 }
 .radio{
     font:normal 7pt arial;
-}
+}.button {
+    -moz-border-radius: 25px;
+    -moz-box-shadow: #6E7849 0px 0px 10px;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: #6E7849 0 0 10px;
+    -webkit-transition: all 0.5s ease;
+    background-color: #ecebeb;
+    border-radius: 15px;
+    border: 0px solid #4a5032;
+    box-shadow: #b3b3b3 1.5px 1px 10px;
+    color: #333231;
+    display: inline-block;
+    font-size: 10pt;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  .button:hover {
+    padding: 15px;
+  }.inputnumber{
+    
+      box-shadow: inset #adadad 2px 2px 9px ;
+      padding: 4px;
+      border-color:  rgb(255, 255, 255);
+      
+  }.inputnumber:hover{
+    padding: 8px;
+  }
